@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/city
+###
+POST http://localhost:8080/api/city
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "London",
+  "country": "United Kingdom",
+  "details": "The British capital"
+}
+###

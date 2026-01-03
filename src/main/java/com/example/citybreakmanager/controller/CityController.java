@@ -28,7 +28,7 @@ public class CityController {
     }
 
     @PostMapping
-    public void insertCity(City city){
+    public void insertCity(@RequestBody City city){
         cityService.insertCity(city);
     }
 
