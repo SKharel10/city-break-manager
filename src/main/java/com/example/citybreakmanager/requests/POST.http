@@ -1,1 +1,9 @@
-GET http://localhost:8080/api/city
+POST http://localhost:8080/api/city
+Content-Type: application/json
+
+{
+  "city_id": 4,
+  "name": "Paris",
+  "country": "France",
+  "details": "The heart of France, with the Eiffel Tower"
+}

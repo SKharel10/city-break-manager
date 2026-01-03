@@ -1,7 +1,6 @@
 package com.example.citybreakmanager.model;
 
 import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
 
@@ -14,7 +13,7 @@ public class City {
     private String country;
     private String details;
 
-    @OneToMany(mappedBy = "trip_id")
+    @OneToMany(mappedBy = "city")
     private List<Trip> listOfTrips;
 
 }

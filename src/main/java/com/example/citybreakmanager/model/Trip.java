@@ -11,7 +11,7 @@ public class Trip {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "city_id")
+    @JoinColumn(name = "city")
     private City city;
     private LocalDate startDate;
     private LocalDate endDate;
