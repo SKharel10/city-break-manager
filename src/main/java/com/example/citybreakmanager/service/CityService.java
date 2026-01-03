@@ -20,13 +20,30 @@ public class CityService {
 
     public City getCityById(Integer id) throws IllegalArgumentException {
         return cityRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException(
-                        id + "not found"
-                ));
+                .orElseThrow(() -> new IllegalArgumentException(id + "not found"));
     }
 
     public void insertCity(City city){
         cityRepository.save(city);
+    }
+
+    public void updateCityById(Integer id, City city){
+        City selectedCity = cityRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException(id + "not found"));
+
+        selectedCity.setId(city.getId());
+        selectedCity.setCountry(city.getCountry());
+        selectedCity.setDetails(city.getDetails());
+        selectedCity.setName(city.getName());
+
+        cityRepository.save(selectedCity);
+
+    }
+
+    public void deleteCityById(Integer id){
+        City selectedCity = cityRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException(id + "not found"));
+        cityRepository.deleteById(id);
     }
 
 }
