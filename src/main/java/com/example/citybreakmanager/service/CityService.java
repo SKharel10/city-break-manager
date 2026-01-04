@@ -3,7 +3,6 @@ package com.example.citybreakmanager.service;
 import com.example.citybreakmanager.model.City;
 import com.example.citybreakmanager.repository.CityRepository;
 import java.util.List;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service

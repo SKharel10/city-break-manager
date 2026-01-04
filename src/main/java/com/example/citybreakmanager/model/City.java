@@ -1,10 +1,6 @@
 package com.example.citybreakmanager.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 public class City {
@@ -15,6 +11,7 @@ public class City {
   private String name;
   private String country;
   private String details;
+
   public Integer getId() {
     return id;
   }

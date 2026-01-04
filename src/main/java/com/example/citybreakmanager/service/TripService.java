@@ -5,7 +5,6 @@ import com.example.citybreakmanager.model.Trip;
 import com.example.citybreakmanager.repository.CityRepository;
 import com.example.citybreakmanager.repository.TripRepository;
 import java.util.List;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
